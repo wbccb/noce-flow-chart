@@ -13,7 +13,7 @@ import RectNode from '../view/node/RectNode';
 // import PolygonNode from '../view/node/PolygonNode';
 // import PolygonNodeModel from '../model/node/PolygonNodeModel';
 // import TextNodeModel from '../model/node/TextNodeModel';
-// import TextNode from '../view/node/TextNode';
+import TextNode from '../view/node/TextNode';
 // import LineEdge from '../view/edge/LineEdge';
 // import LineEdgeModel from '../model/edge/LineEdgeModel';
 // import PolylineEdge from '../view/edge/PolylineEdge';
@@ -386,7 +386,7 @@ export interface RegisterParam {
   // DiamondNodeModel: typeof DiamondNodeModel;
   // PolygonNode: typeof PolygonNode;
   // PolygonNodeModel: typeof PolygonNodeModel;
-  // TextNode: typeof TextNode;
+  TextNode: typeof TextNode;
   // TextNodeModel: typeof TextNodeModel;
   // LineEdge: typeof LineEdge;
   // LineEdgeModel: typeof LineEdgeModel;

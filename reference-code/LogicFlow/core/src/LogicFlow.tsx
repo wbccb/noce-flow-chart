@@ -18,7 +18,7 @@ import GraphModel from "./model/GraphModel";
 import History from "./history/History";
 import Tool from "./tool";
 import Keyboard from "./keyboard";
-import Dnd from "./behavior/Dnd";
+import Dnd from "./view/behavior/Dnd";
 
 import * as Options from "./options";
 import * as _Model from "./model";

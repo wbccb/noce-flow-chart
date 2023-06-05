@@ -1,6 +1,6 @@
 import { TextConfig } from '../../type';
-import LogicFlow from "../LogicFlow";
-import {BaseNodeModel} from "../../model";
+import LogicFlow from "../../LogicFlow";
+import BaseNodeModel from "../../model/node/BaseNodeModel";
 
 export type NewNodeConfig = {
   type: string;
@@ -18,6 +18,17 @@ class Dnd {
   constructor(params) {
     const {lf} = params;
     this.lf = lf;
+  }
+
+
+  startDrag(nodeConfig: NewNodeConfig) {
+    this.nodeConfig = nodeConfig;
+    window.document.addEventListener('mouseup', this.stopDrag);
+  }
+
+  stopDrag() {
+    this.nodeConfig = null;
+    window.document.removeEventListener('mouseup', this.stopDrag);
   }
 }
 
